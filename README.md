@@ -18,13 +18,13 @@ The `airflow-test` folder also contains the solution for the Cloud Infrastructur
 
 The `voting-system` folder contains the solution for the Simple (but hard) Voting System question. The folder contains a `README.md` file with instructions on how to set up and run the system.
 
-Each folder contains a separate README.md file with instructions on how to set up and run the solution for that question.
+Each folder contains a separate `README.md` file with instructions on how to set up and run the solution for that question.
 
 ## Dependencies
 
 The solutions require the following dependencies:
 
-- SQL and Data Modeling: PostgreSQL
+- SQL and Data Modeling: None
 - ETL Pipeline on Airflow: Apache Airflow, PostgreSQL
 - Cloud Infrastructure and Containerization: Docker, Docker Compose, Apache Airflow, PostgreSQL
 - Simple (but hard) Voting System: Python, Sanic, PostgreSQL, Docker, Docker Compose

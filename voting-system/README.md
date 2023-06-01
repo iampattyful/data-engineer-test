@@ -13,8 +13,8 @@ The system will be implemented using Python and the Sanic web framework. We will
 1. Setting up the environment
 
    - Install Docker and Docker Compose
-   - Create a Dockerfile for the Sanic app
-   - Create a docker-compose.yml file to define and run the backend services
+   - Create a `Dockerfile` for the Sanic app
+   - Create a `docker-compose.yml file` to define and run the backend services
    - Build and run the Docker containers
    - Run 'start.sh' to create the database and tables and populate the database with some sample data
    - The Sanic app should be running on port 8000 and the PostgreSQL database should be running on port 5432
@@ -148,4 +148,4 @@ Example response body:
 }
 ```
 
-In conclusion, we have designed and implemented a simple voting system for product features using Python, Sanic, and PostgreSQL, and deployed it using Docker Compose. The system consists of two RESTful backend service endpoints: one for voting and one for displaying the result. The system can be easily deployed and managed thanks to the use of Docker and Docker Compose.Note: If you decide to add Redis and NGINX to the system in the future, you can modify the Docker Compose file to include those services, and update the endpoints accordingly.
+In conclusion, I have designed and implemented a simple voting system for product features using Python, Sanic, and PostgreSQL, and deployed it using Docker Compose. The system consists of two RESTful backend service endpoints: one for voting and one for displaying the result. The system can be easily deployed and managed thanks to the use of Docker and Docker Compose. The system is also scalable and fault-tolerant thanks to the use of PostgreSQL as the database and the use of Docker Compose to define and run the backend services. The system can be easily extended to support more features and more users by adding more backend services and scaling up the database. The system can also be easily extended to support more types of votes by adding more tables to the database and adding more routes to the Sanic app.
