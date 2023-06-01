@@ -1,4 +1,4 @@
-# Data Engineer Test
+# Data Engineer Test - Patty Lau
 
 This repository contains the answers for the Data Engineer Test. The answers are divided into four parts: SQL and Data Modeling, ETL Pipeline on Airflow, Cloud Infrastructure and Containerization, and Simple (but hard) Voting System.
 
@@ -30,10 +30,6 @@ The solutions require the following dependencies:
 - Simple (but hard) Voting System: Python, Sanic, PostgreSQL, Docker, Docker Compose
 
 Make sure to install the necessary dependencies before running the solutions.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
