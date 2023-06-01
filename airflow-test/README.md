@@ -1,10 +1,10 @@
 # ETL Pipeline on Airflow
 
-## Overview
+## Overview:
 
 The goal of this task is to design an Airflow DAG that fetches weather forecast data from an API, transforms it, and loads it into a PostgreSQL database with daily partitioning. The DAG should be scheduled to run once per day at 8:00 am HKT.
 
-## Design
+## Design:
 
 The DAG consists of three tasks:
 
@@ -13,7 +13,7 @@ The DAG consists of three tasks:
 3. load_data: Loads the transformed weather forecast data into a PostgreSQL database with daily partitioning.
 The DAG is scheduled to run once per day at 8:00 am HKT using the schedule_interval parameter.
 
-## Implementation
+## Implementation:
 
 The DAG is defined in a Python file, which can be stored in the dags directory of your Airflow installation. Here's an example implementation of the DAG:
 
@@ -168,11 +168,11 @@ extract_data >> transform_data >> load_data
 
 # Cloud Infrastructure and Containerization
 
-## Overview
+## Overview:
 
 The goal of this task is to design a Dockerfile and docker-compose.yml file that create a local setup for Apache Airflow, including the web server, scheduler, and a PostgreSQL database. The DAG implemented above should be packed inside the Airflow instance. The official Airflow Docker image is used.
 
-## Design
+## Design:
 
 The Dockerfile should be used to create a custom image for Airflow with all the necessary dependencies and configurations. The docker-compose.yml file should define the services for the web server, scheduler, and PostgreSQL database, and specify their dependencies.
 
@@ -191,7 +191,7 @@ _The docker-compose.yml file should define the following services:_
 3. scheduler: The Airflow scheduler service, which also depends on the postgres service.
 The docker-compose.yml file should also configure the environment variables required for the PostgreSQL connection and the DAG schedule.
 
-## Implementation
+## Implementation:
 
 ### Using Docker Compose
 
@@ -259,7 +259,7 @@ RUN pip install apache-airflow psycopg2-binary
 RUN mkdir -p ./dags ./logs ./plugins ./config
 
 # Create .env file
-RUN echo -e "AIRFLOW_UID=$(id -u)" > .env
+RUN echo "AIRFLOW_UID=$(id -u)" > .env
 
 # Expose ports
 EXPOSE 8080

@@ -21,5 +21,6 @@ RUN apt-get update && apt-get install -y postgresql-client
 # Expose port 8000 for the Sanic application
 EXPOSE 8000
 
-# Start the Sanic application
-CMD ["python3", "server.py"]
+# Run start.sh when the container launches
+# COPY start.sh /app/start.sh
+# CMD ["/bin/bash", "/app/start.sh"]
