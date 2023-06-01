@@ -11,7 +11,7 @@ The DAG consists of three tasks:
 1. extract_data: Fetches the weather forecast data from the HKO weather forecast API and stores it in an XCom variable.
 2. transform_data: Transforms the weather forecast data by setting the correct time format and stores the transformed data in an XCom variable.
 3. load_data: Loads the transformed weather forecast data into a PostgreSQL database with daily partitioning.
-The DAG is scheduled to run once per day at 8:00 am HKT using the schedule_interval parameter.
+The DAG is scheduled to run once per day at 8:00 am HKT using the schedule parameter.
 
 ## Implementation:
 
