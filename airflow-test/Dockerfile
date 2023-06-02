@@ -8,7 +8,7 @@ RUN pip install apache-airflow psycopg2-binary
 RUN mkdir -p ./dags ./logs ./plugins ./config
 
 # Create .env file
-RUN echo "AIRFLOW_UID=$(id -u)" > .env
+RUN echo -e "AIRFLOW_UID=$(id -u)" > .env
 
 # Expose ports
 EXPOSE 8080
