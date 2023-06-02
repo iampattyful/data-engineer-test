@@ -198,7 +198,7 @@ The docker-compose.yml file should also configure the environment variables requ
 To set up the Airflow instance using Docker Compose, follow these steps:
 
 1. Make sure you have Docker and Docker Compose installed on your system.
-2. Download the project from GitHub: git clone https://github.com/rezaabdullah/etl_airflow.git
+2. Download the project from GitHub: git clone https://github.com/iampattyful/data-engineer-test/
 3. Once downloaded, go to the project directory
 4. Open a terminal window and navigate to the root directory of your project.
 5. Run the following command to start the Airflow services:
